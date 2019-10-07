@@ -5,6 +5,8 @@ Simple easy reusable Weather widget created in React.
 
 The weather widget is resuable react component which takes city as prop. The weather details are loaded using Open weather map API and stored as state in widget component. Widget component is further divided into sub components.
 
+Live preview - https://gopipatell.github.io/whats-the-weather/?city=Sydney
+
 ### Tools & Technologies
 
 * React
