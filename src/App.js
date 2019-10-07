@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from './components/Header.js'
-
+import Widget from './components/Widget.js'
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header/>
+      <Widget city= "mksk"/>
     </div>
   );
 }

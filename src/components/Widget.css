@@ -1,0 +1,44 @@
+
+.widget {
+  display:inline-block;
+  text-align: left;
+  padding: 20px;
+  height:300px;
+  width:300px;
+  border: 1px solid #222222;
+  background-image: linear-gradient(to bottom right, lightblue, #53a8c3);
+
+  border-radius: 40px;
+}
+
+.widget .icon {
+  float: right;
+}
+.widget .temperature {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.widget .city {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.widget .description {
+  font-size: 17px;;
+}
+.widget .details {
+  font-size: 15px;
+}
+
+.widget .not-found {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+.widget .not-found .icon {
+  font-size:60px;
+}
+.widget .tempf {
+  font-size: 15px;
+  margin-left:10px;
+}
