@@ -40,7 +40,7 @@ render() {
       <img className="icon" src={"http://openweathermap.org/img/wn/"+this.state.icon+"@2x.png"} />
       <div className="temperature">
         {this.state.temperature}°C
-        <span className="tempf">/ 45°F</span>
+        <span className="tempf">/ {Math.round(this.state.temperature*9/5 + 32)}°F</span>
       </div>
       <div className="city">{this.state.city}</div>
       <p className="description">{this.state.description}</p>
@@ -49,8 +49,8 @@ render() {
   ) :
       <div className="widget">
         <div className="not-found">
-          <span className="icon">🤷‍</span>
           <p>Not found</p>
+          <p className="icon">🤷‍</p>
         </div>
       </div>
   }

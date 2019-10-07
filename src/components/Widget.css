@@ -7,7 +7,6 @@
   width:300px;
   border: 1px solid #222222;
   background-image: linear-gradient(to bottom right, lightblue, #53a8c3);
-
   border-radius: 40px;
 }
 
@@ -24,20 +23,22 @@
   margin-top: 10px;
 }
 .widget .description {
-  font-size: 17px;;
+  font-size: 17px;
 }
 .widget .details {
   font-size: 15px;
 }
 
-.widget .not-found {
-  margin-top: 40px;
+.widget > .not-found p {
   text-align: center;
+  width: 100%;
   font-size: 20px;
 }
+
 .widget .not-found .icon {
-  font-size:60px;
+  font-size: 60px;
 }
+
 .widget .tempf {
   font-size: 15px;
   margin-left:10px;
