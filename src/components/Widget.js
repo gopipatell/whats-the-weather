@@ -1,4 +1,6 @@
 import React from 'react';
+import NotFound from './NotFound';
+import Weather from './Weather';
 import './Widget.css';
 
 class Widget extends React.Component {
@@ -30,29 +32,29 @@ class Widget extends React.Component {
                   "description":data.weather[0].description,
                   "icon": data.weather[0].icon
               });
-            }).catch(e => console.log('errorrr', e));
+            }).catch(e => this.setState({
+              "status": "notfound"
+            }));
 
   }
 
 render() {
-  return this.state.status === "success" ? (
-      <div className="widget">
-      <img className="icon" src={"http://openweathermap.org/img/wn/"+this.state.icon+"@2x.png"} />
-      <div className="temperature">
-        {this.state.temperature}°C
-        <span className="tempf">/ {Math.round(this.state.temperature*9/5 + 32)}°F</span>
-      </div>
-      <div className="city">{this.state.city}</div>
-      <p className="description">{this.state.description}</p>
-      <div className="details">Wind: {this.state.wind} km/h</div>
-      </div>
-  ) :
-      <div className="widget">
-        <div className="not-found">
-          <p>Not found</p>
-          <p className="icon">🤷‍</p>
+
+    if(this.state.status === "success") {
+      return (
+        <Weather data={{...this.state}} />
+      );
+    } else if (this.state.status === "notfound") {
+      return (
+        <NotFound />
+      );
+    } else {
+      return (
+        <div className="widget">
+          Loading...
         </div>
-      </div>
+      );
+    }
   }
 }
 
