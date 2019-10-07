@@ -13,7 +13,7 @@ class Widget extends React.Component {
   }
 
   componentDidMount() {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${this.props.city}&appid=Bb4d7e1fa9d1c3d0899f27b1cf01c93c`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.props.city}&appid=Bb4d7e1fa9d1c3d0899f27b1cf01c93c`;
     console.log(url);
     console.log(this.props.city);
 
