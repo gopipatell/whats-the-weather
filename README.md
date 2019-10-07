@@ -21,3 +21,6 @@ Live preview - https://gopipatell.github.io/whats-the-weather/?city=Sydney
 * Displays current weather condition icon
 
 ### Screen designs
+
+![Weather App](docs/whats_weather_show_weather.png)
+![Weather App](docs/whats_weather_app.png)
