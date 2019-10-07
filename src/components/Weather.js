@@ -11,7 +11,7 @@ const Weather = function(props) {
       </div>
       <div className="city">{props.data.city}</div>
       <p className="description">{props.data.description}</p>
-      <div className="details">Wind: {props.data.wind} km/h</div>
+      <div className="details">Wind {props.data.wind} km/h</div>
     </div>
     );
 }
